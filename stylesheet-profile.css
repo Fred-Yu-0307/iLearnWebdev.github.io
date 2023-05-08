@@ -1,0 +1,602 @@
+/* GENERAL */
+body {
+    background-color: #2C3531;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.text {
+    color: #D1E8E2;
+}
+
+
+
+/* USER PROFILE */
+
+.User-Name {
+    color:#45A29E;
+}
+
+.sub-labels {
+  padding-top: 16px;
+  color:#C5C6C7;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  
+  background-color: #1F2833; /* Set the background color */
+  border: none; /* Remove the border */
+  box-shadow: none; /* Remove the shadow */
+}
+
+.dropdown-item {
+  color: #C5C6C7;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #66FCf1; /* Set the background color when hovered or focused */
+}
+
+
+/* CARDS */
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 210px;
+    width: 190px;
+    min-width: 250px;
+    padding: 1rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #00000067;
+    transition: .2s;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .card:hover {
+    transform: translateY(-0.4rem);
+  }
+  
+  .card-progress{
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+  }
+  
+  .progress-label {
+    margin-left: 25px;
+    color: #7a7a8c;
+  }
+  
+  .progress-label-desc {
+    color: #e52e71;
+    font-weight: 600;
+  }
+
+  .progress-label p {
+    font-size: 15px;
+  }
+  
+  .card-header {
+    margin-top: -15px;
+    margin-left: -10px;
+    margin-bottom: 8px;
+    color: #7a7a8c;
+  }
+  
+  .card-header p {
+    font-size: 14px;
+    margin: 0 0 1rem -10px;
+    color: #7a7a8c;
+  }
+  
+  .card-header .title {
+    font-size: 25px;
+    margin: .25rem 0 auto;
+    cursor: pointer;
+    font-family: 'Arial Black', sans-serif;
+  }
+  
+  .card-header .title:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+/* Progress Circle */
+.progress-bar {
+  color:#45A29E;
+  font-family: Arial;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(hotpink 75%, pink 0);    
+}
+
+.progress-bar::before {
+  content: "75%";
+}
+
+
+@property --progress-value {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes progress {
+ to { --progress-value: 75; }
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: progress 2s 1 forwards;
+}
+
+.progress-bar::before {
+  counter-reset: percentage var(--progress-value);
+  content: counter(percentage) '%';
+  animation: progress 2s 1 forwards;
+}
+
+/* Swipeable cards */
+.card-container {
+  padding:20px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* for smoother scrolling on iOS */
+}
+
+.card {
+  flex: 0 0 300px;
+  margin-right: 20px;
+  touch-action: pan-y;
+  transition: transform 0.2s ease-out;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card.swipe-left {
+  transform: translateX(-100%);
+}
+
+.card.swipe-right {
+  transform: translateX(100%);
+}
+
+#navbarr {
+	background-color: #2C3531;
+}
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 12px;
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: #45A29E; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 12px;
+  background: #26635f; 
+}
+
+
+
+/*FOOTER*/
+footer{
+  background-color: black;
+  width: 100%;
+}
+
+.Fcontainer{
+background-color: black;
+width: 100%;
+}
+.Fcontainer a{
+font-size: 18px; 
+color: #c5c6c7; 
+text-decoration: none; 
+margin-right: 30px;
+}
+
+.FCtxt:hover{
+color: aqua;
+text-decoration: none;
+}
+
+.flink{
+font-size: 18px;
+text-align: center;
+color: #1f2833;
+text-decoration: none;
+}
+
+#footer{
+background-color: black;
+width: 100%;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+#side{    
+  background-color: #1f2833;;
+  width: 300px; 
+  margin-top: 5%; 
+  border: 0;
+}
+#side p{
+  color: aqua;
+  background-color: #1f2833;
+  width: 100px;
+  margin-left: 90px;
+  border-radius: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#side h3{
+  color: whitesmoke;
+}
+
+#mid{
+  width: 400px;
+  margin-top: 2%; 
+  border: 0;
+  background-color: #1f2833;
+
+}
+#mid p{
+  color: aqua;
+  font-size: 20px;
+  background-color: #1f2833;
+  width: 100px;
+  margin-left: 140px;
+  border-radius: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#mid h3{
+  color: whitesmoke;
+}
+
+.twitter{
+  width: 50px; 
+  height: 50px;
+  border-radius: 10px;
+  background: url("resources1/twitter.png");
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+  border: none;
+}
+.facebook{
+  width: 50px; 
+  height: 50px;
+  border-radius: 10px;
+  background: url("resources1/facebook.png");
+  background-size: cover;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  border: none;
+}
+.instagram{
+  width: 50px; 
+  height: 50px;
+  border-radius: 10px;
+  background: url("resources1/instagram.jpg");
+  background-size: cover;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+}
+
+.discord{
+  width: 50px; 
+  height: 50px;
+  border-radius: 10px;
+  background: url("resources1/discord.jpg");
+  background-size: cover;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+}
+
+
+/* ACCOUNT */
+#nav-acc{
+  width: fit-content;
+  margin-left:14px;
+  margin-top:3px;
+  height: 35px;
+  background: #ffffff0d;
+  border-radius: 18px;
+  border: 2px solid #66FCF1;
+  font-size: 15px;
+  font-weight: bold;
+  color: #66FCF1;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 17px;
+  z-index: 1;
+}
+
+#nav-acc:before {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  background: #334b79;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#nav-acc:after {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  background: #334b79;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#nav-acc:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#nav-acc:hover:before {
+  top: 0;
+  left: 0;
+}
+
+#nav-acc:hover:after {
+  top: 0;
+  left: 50%;
+}
+
+/* LOGOUT */
+#nav-acc1{
+  width: fit-content;
+  margin-left:14px;
+  margin-top:3px;
+  height: 35px;
+  background: #ffffff0d;
+  border-radius: 18px;
+  border: 2px solid #cc1616;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 17px;
+  z-index: 1;
+}
+
+#nav-acc1:before {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  background: #ff0000;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#nav-acc1:after {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  background: #ff0000;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#nav-acc1:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#nav-acc1:hover:before {
+  top: 0;
+  left: 0;
+}
+
+#nav-acc1:hover:after {
+  top: 0;
+  left: 50%;
+}
+
+
+.navbar-scrolled {
+  box-shadow: 0 4px 15px -6px rgba(0, 0, 0, 0.5);
+}
+
+/* MODAL BG */
+.modal-content {
+  border-radius: 10px;
+  background-color: rgba(73, 68, 68, 0.9) !important;
+  backdrop-filter: blur(50px) !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header,
+.modal-footer {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+
+#descmodalid {
+  max-width: 400px;
+}
+
+.modal-dialog {
+  margin: 25px auto;
+}
+
+.description1 {
+  color:#c5c6c7;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.modal-title {
+  color:#66FCF1;
+  font-size: 34px;
+}
+
+/* button */
+  .submit {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  .submit:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .submit:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .submit::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .submit:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+
+  .skills-acquired {
+    font-weight: 600;
+    font-family: Arial;
+    font-size: 22px;
+    color:#66FCF1;
+  }
+ 
+ 
+
+ 
+ 
+ 
+

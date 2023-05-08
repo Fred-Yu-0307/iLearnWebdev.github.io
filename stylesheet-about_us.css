@@ -1,0 +1,143 @@
+.dropdown-menu {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: none;
+  box-shadow: none;
+}
+
+.dropdown-menu {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+#navbarr {
+	background-color: #2C3531;
+}
+
+/* ACCOUNT */
+#nav-acc{
+  width: fit-content;
+  margin-left:14px;
+  margin-top:3px;
+  height: 35px;
+  background: #ffffff0d;
+  border-radius: 18px;
+  border: 2px solid #66FCF1;
+  font-size: 15px;
+  font-weight: bold;
+  color: #66FCF1;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 17px;
+  z-index: 1;
+}
+
+#nav-acc:before {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  background: #334b79;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#nav-acc:after {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  background: #334b79;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#nav-acc:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#nav-acc:hover:before {
+  top: 0;
+  left: 0;
+}
+
+#nav-acc:hover:after {
+  top: 0;
+  left: 50%;
+}
+
+/* LOGOUT */
+#nav-acc1{
+  width: fit-content;
+  margin-left:14px;
+  margin-top:3px;
+  height: 35px;
+  background: #ffffff0d;
+  border-radius: 18px;
+  border: 2px solid #cc1616;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 17px;
+  z-index: 1;
+}
+
+#nav-acc1:before {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  background: #ff0000;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#nav-acc1:after {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  background: #ff0000;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#nav-acc1:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#nav-acc1:hover:before {
+  top: 0;
+  left: 0;
+}
+
+#nav-acc1:hover:after {
+  top: 0;
+  left: 50%;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 4px 15px -6px rgba(0, 0, 0, 0.5);
+}
+ 
+ 

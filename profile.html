@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap for Web Development</title>
+    <link rel="icon" href="resources/web_logo.png" type="image/png">
+
+    <!--CSS and Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stylesheet-profile.css">
+    <script src="scriptsheet.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-Dziy5FgXTxS5+eD5JzoiEhA6IVGQm1nCWfighZ2Q/2jrFxyTLfO9sFpPpTKJwTkB" crossorigin="anonymous">
+</head>
+
+<body style="padding-top: 90px;">
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbarr">
+      <div class="container">
+      <a class="navbar-brand" href="landing_page.html"><img src="resources/web_logo.png" width="120px"></a>
+      <!--<h1><a href="#" class="navbar-brand">Roadmap</a></h1>-->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+          <Span class="navbar-toggler-icon"></Span>
+      </button>
+  <div class="collapse navbar-collapse" id="mynav">
+      <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="landing_page.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Roadmaps
+            </a>
+            <div class="dropdown-menu dropdown-menu-right animated slideInDown" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="frontend_development.html">Frontend Development</a>
+              <a class="dropdown-item" href="backend_development.html">Backend Development</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" id="nav-acc" href="profile.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" id="nav-acc1" href="landing_page.html">Log out</a></li>
+      </ul>
+  </div>
+  </div>
+  </nav>
+
+    <!-- Upperfold -->
+    <div class="container">
+        <div class="row pb-5">
+          <div class="col-sm-6 col-md-4" id="user-avatar">
+            <img src="resources/user-avatar.png" class="img-fluid">
+            <div class="text-center">
+            <button type="li-btn" class="submit" data-toggle="modal" data-target="#editProfileModal">&nbsp;&nbsp;&nbsp;Edit Profile<i class="fas fa-sign-in-alt ml-3"></i></button>
+          </div>
+          </div>
+          <div class="col-sm-6 col-md-8">
+            <h1 class="User-Name">Brendan Eich</h1>
+            <h2 class="sub-labels">Recent Course Topics</h2>
+            <!-- Swipeable Cards -->
+            <div class="card-container">
+              <!--FIRST CARD-->
+              <div class="card">
+                <header class="card-header">
+                  <p>Frontend Development</p>
+                  <span class="title">CSS</span>
+                </header>
+                <div class="card-progress">
+                  <div class="progress-bar">
+                    <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                  </div>
+                  <div class="progress-label">
+                    <div class="progress-label-desc">Progress</div> <p>75% out of 100% done</p>
+                    </div>
+                  </div>
+              </div>
+              <!--SECOND CARD-->
+              <div class="card">
+                <header class="card-header">
+                  <p>Frontend Development</p>
+                  <span class="title">HTML</span>
+                </header>
+                <div class="card-progress">
+                  <div class="progress-bar">
+                    <progress value="18" min="0" max="100" style="visibility:hidden;height:0;width:0;">18%</progress>
+                  </div>
+                  <div class="progress-label">
+                    <div class="progress-label-desc">Progress</div> <p>18% out of 100% done</p>
+                    </div>
+                  </div>
+            </div>
+            <!--THIRD CARD-->
+            <div class="card">
+                  <header class="card-header">
+                    <p>Frontend Development</p>
+                    <span class="title">Internet</span>
+                  </header>
+                  <div class="card-progress">
+                    <div class="progress-bar">
+                      <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                    </div>
+                    <div class="progress-label">
+                      <div class="progress-label-desc">Progress</div> <p>75% out of 100% done</p>
+                      </div>
+                    </div>
+              </div>
+              <!--FOURTH CARD-->
+              <div class="card">
+                <header class="card-header">
+                  <p>Frontend Development</p>
+                  <span class="title">JavaScript</span>
+                </header>
+                <div class="card-progress">
+                  <div class="progress-bar">
+                    <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                  </div>
+                  <div class="progress-label">
+                    <div class="progress-label-desc">Progress</div> <p>75% out of 100% done</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <h2 class="sub-labels">Skills Acquired</h2>
+            <ul class="skills-acquired">
+              <li>Web Design</li>
+              <li>Responsive Web Design</li>
+            </ul>
+        </div>
+
+      </div>
+      
+    </div>
+
+
+    <!-- EDIT PROFILE MODAL -->
+    <div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="termsmodalid" style="max-width: 500px;  border-radius: 10px; background-color: rgba(73, 68, 68, 0.9) !important; backdrop-filter: blur(50px) !important; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Edit Profile</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+          <!-- Pick a Framework form-->
+          <form>
+            <div class="modal-body" style="height: 400px; overflow-y: auto;">
+            <h4 class="description1"><br>
+              <p>Last Name: Eich</p> 
+              <p>First Name: Brendan</p>
+              <p>Email: eichbrendan@gmail.com</p>
+              <p>Password: ************</p>
+            </h4>
+              <div class="row justify-content-end m-2">
+              <button type="submit" class="submit" data-dismiss="modal">Done</button>
+              </div>
+              </div>
+          </form>
+          </div>
+      </div>
+      </div>
+    </div>
+    
+
+
+
+    
+            
+            
+            
+            <!--FOOTER-->
+    <footer>
+      <div class="Fcontainer">
+        <div style="text-align: center; padding-top: 20px;">
+            <a href="landing_page.html" class="FCtxt">Roadmaps</a>
+            <a href="about.html" class="FCtxt">About</a>
+            <a href="#" class="FCtxt">YouTube</a>
+        </div>
+      </div>
+
+      <div class="modal fade" id="out">
+        <div class="modal-dialog modal-lg" style="width: 500px;">
+          <div class="modal-content">
+        
+          <div class="modal-header" style="text-align: center;">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          <div class="modal-body" style="text-align: center;">
+            <h4 style="font-size: 20px;">Signing Out</h4>
+            <p>Are you sure you want to sign out?</p>
+        </div>
+          <div class="modal-footer">
+            <a href="Index.html" style="text-decoration: none;">Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+	  
+    <div class="container1">
+      <div class="card1" style="background-color: black;">
+        <div class="etxt">
+            <img src="resources1/ilearnwebdev.png" style="height: 150px;">
+            <p>Copyright © 2023 iLearnWebdev</p>
+        </div>
+      </div>
+      <div class="card1" style="height: 1px; width: 400px; background-color: black;"></div>
+      
+      <div class="card1" style="background-color: black;">
+        <div style="color: #c5c6c7; text-align: left;">
+            <h6>Contact Us:</h6>
+            <p style="margin-left: 20px; margin-bottom: 0px;"><strong>Email:</strong> iLearnWebDev@gmail.com</p>
+            <p style="margin-left: 20px; margin-top: 0px;"><strong>Telephone:</strong> 143-912-135</p>
+        </div>
+        
+        <div class="Fcontainer">
+          <button class="facebook"></button>
+          <button class="instagram"></button>
+          <button class="twitter"></button>
+          <button class="discord"></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="Fcontainer">
+      <div style="text-align: center; padding-bottom: 10px;">
+		<a href="#" class="FCtxt" style="font-size: 14px; margin-right: 5px;">FAQs</a>
+		<a class="FCtxt" style="font-size: 14px; margin-right: 5px; color: #c5c6c7">|</a>
+		<a href="#" class="FCtxt" style="font-size: 14px; margin-right: 5px;">Terms</a>
+		<a class="FCtxt" style="font-size: 14px; margin-right: 5px; color: #c5c6c7;">|</a>
+		<a href="#" class="FCtxt" style="font-size: 14px; margin-right: 5px;">Privacy</a>
+      </div>
+    </div>
+    </footer>
+
+           
+            
+      
+
+</body>
+
+</html>

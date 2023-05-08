@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap for Web Development</title>
+    <link rel="icon" href="resources/web_logo.png" type="image/png">
+
+    <!--CSS and Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="scriptsheet.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-Dziy5FgXTxS5+eD5JzoiEhA6IVGQm1nCWfighZ2Q/2jrFxyTLfO9sFpPpTKJwTkB" crossorigin="anonymous">
+</head>
+
+<body style="padding-top: 70px;">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbarr">
+        <div class="container">
+        <a class="navbar-brand" href="landing_page.html"><img src="resources/web_logo.png" width="120px"></a>
+        <!--<h1><a href="#" class="navbar-brand">Roadmap</a></h1>-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+            <Span class="navbar-toggler-icon"></Span>
+        </button>
+    <div class="collapse navbar-collapse" id="mynav">
+        <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item"><a class="nav-link active" href="landing_page.html">Home</a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="#">Roadmaps</a></li>-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Roadmaps
+              </a>
+              <div class="dropdown-menu dropdown-menu-right animated slideInDown" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="frontend_development.html">Frontend Development</a>
+                <a class="dropdown-item" href="backend_development.html">Backend Development</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" id="nav-acc" href="profile.html">Profile</a></li>
+            <li class="nav-item"><a onclick="logout()"class="nav-link" id="nav-acc1" href="landing_page.htmlmodal">Log out</a></li>
+        </ul>
+    </div>
+    
+    </div>
+    </nav>
+
+    <!-- Upper fold -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <!-- Text -->
+                <div class="col-md-6">
+                    <div class="text">
+                        Roadmap for web development
+                    </div>
+                    <div class="wrapper">
+                        <div class="static-text">I will be a</div>
+                        <ul class="dynamic-txts">
+                            <li><span>Frontend Developer</span></li>
+                            <li><span>Backend Developer</span></li>
+                            <li><span>Full Stack Developer</span></li>
+                        </ul>
+                    </div>
+                    <div class="buttons">
+                        <button class="su-btn" data-toggle="modal" data-target="#signupModal">&nbsp;&nbsp;&nbsp;Create Account<i class="fas fa-user-plus ml-3"></i></button>
+                        <button class="li-btn" data-toggle="modal" data-target="#loginModal">&nbsp;&nbsp;&nbsp;Login<i class="fas fa-sign-in-alt ml-3"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Sign up Modal -->
+                <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Create Your Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <!-- Sign up form -->
+                        <form>
+                          <div class="modal-body" style="height: 400px; overflow-y: auto;">
+                            <div class="wave-group">
+                                <input required="" type="text" class="input">
+                                <span class="bar"></span>
+                                <label class="label">
+                                  <span class="label-char" style="--index: 0">L</span>
+                                  <span class="label-char" style="--index: 1">a</span>
+                                  <span class="label-char" style="--index: 2">s</span>
+                                  <span class="label-char" style="--index: 3">t</span>
+                                  <span class="label-char" style="--index: 4">&nbsp;</span>
+                                  <span class="label-char" style="--index: 5">N</span>
+                                  <span class="label-char" style="--index: 6">a</span>
+                                  <span class="label-char" style="--index: 7">m</span>
+                                  <span class="label-char" style="--index: 8">e</span>
+                                </label>
+                              </div>
+
+                              <div class="wave-group">
+                                <input required="" type="text" class="input">
+                                <span class="bar"></span>
+                                <label class="label">
+                                  <span class="label-char" style="--index: 0">F</span>
+                                  <span class="label-char" style="--index: 1">i</span>
+                                  <span class="label-char" style="--index: 2">r</span>
+                                  <span class="label-char" style="--index: 3">s</span>
+                                  <span class="label-char" style="--index: 4">t</span>
+                                  <span class="label-char" style="--index: 5">&nbsp;</span>
+                                  <span class="label-char" style="--index: 6">N</span>
+                                  <span class="label-char" style="--index: 7">a</span>
+                                  <span class="label-char" style="--index: 8">m</span>
+                                  <span class="label-char" style="--index: 9">e</span>
+                                </label>
+                              </div>
+
+                              <div class="wave-group">
+                                <input required="" type="email" class="input">
+                                <span class="bar"></span>
+                                <label class="label">
+                                  <span class="label-char" style="--index: 0">E</span>
+                                  <span class="label-char" style="--index: 1">m</span>
+                                  <span class="label-char" style="--index: 2">a</span>
+                                  <span class="label-char" style="--index: 3">i</span>
+                                  <span class="label-char" style="--index: 4">l</span>
+                                </label>
+                              </div>
+
+                              <div class="wave-group">
+                                <input required="" type="password" class="input">
+                                <span class="bar"></span>
+                                <label class="label">
+                                  <span class="label-char" style="--index: 0">P</span>
+                                  <span class="label-char" style="--index: 1">a</span>
+                                  <span class="label-char" style="--index: 2">s</span>
+                                  <span class="label-char" style="--index: 3">s</span>
+                                  <span class="label-char" style="--index: 4">w</span>
+                                  <span class="label-char" style="--index: 5">o</span>
+                                  <span class="label-char" style="--index: 6">r</span>
+                                  <span class="label-char" style="--index: 7">d</span>
+                                </label>
+                              </div>
+
+                              <div class="wave-group">
+                                <input required="" type="password" class="input">
+                                <span class="bar"></span>
+                                <label class="label">
+                                  <span class="label-char" style="--index: 0">R</span>
+                                  <span class="label-char" style="--index: 1">e</span>
+                                  <span class="label-char" style="--index: 2">-</span>
+                                  <span class="label-char" style="--index: 3">E</span>
+                                  <span class="label-char" style="--index: 4">n</span>
+                                  <span class="label-char" style="--index: 5">t</span>
+                                  <span class="label-char" style="--index: 6">e</span>
+                                  <span class="label-char" style="--index: 7">r</span>
+                                  <span class="label-char" style="--index: 8">&nbsp;</span>
+                                  <span class="label-char" style="--index: 9">P</span>
+                                  <span class="label-char" style="--index: 10">a</span>
+                                  <span class="label-char" style="--index: 11">s</span>
+                                  <span class="label-char" style="--index: 12">s</span>
+                                  <span class="label-char" style="--index: 13">w</span>
+                                  <span class="label-char" style="--index: 14">o</span>
+                                  <span class="label-char" style="--index: 15">r</span>
+                                  <span class="label-char" style="--index: 16">d</span>
+                                </label>
+                              </div>
+                              <hr>
+                              <div class="form-group">
+                                <p class="other">Or sign up with:</p>
+                                <button type="button" class="btn btn-block btn-danger"><i class="fab fa-google"></i> Google</button>
+                                <button type="button" class="btn btn-block btn-primary"><i class="fab fa-facebook"></i> Facebook</button>
+                              </div>
+
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                <label class="form-check-label" for="terms">
+                                  I agree to the <a class="sw-md"data-toggle="modal" data-target="#termsModal">terms and conditions</a>
+                                </label>
+                                <div class="invalid-feedback">
+                                  *You must agree to the terms and conditions before submitting the form.
+                                </div>
+                              </div> <!--TERMS-->
+
+                              <h4 class="switch-modal"><br>Already have an Account? <a class="sw-md" data-toggle="modal" data-dismiss="modal" data-target="#loginModal">&nbsp;Login</a></h4>
+                              
+
+                            
+                            <div class="row justify-content-end m-2">
+                            <button type="submit" class="submit" >Sign up</button>
+                            </div>
+                          </div>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Log in Modal -->
+                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document" id="descmodalid">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <!-- Login form -->
+                        <form>
+                            <div class="wave-group">
+                                <input required="" type="email" class="input">
+                                <span class="bar"></span>
+                                <label class="label">
+                                  <span class="label-char" style="--index: 0">E</span>
+                                  <span class="label-char" style="--index: 1">m</span>
+                                  <span class="label-char" style="--index: 2">a</span>
+                                  <span class="label-char" style="--index: 3">i</span>
+                                  <span class="label-char" style="--index: 4">l</span>
+                                </label>
+                              </div>
+
+                              <div class="wave-group">
+                                <input required="" type="password" class="input">
+                                <span class="bar"></span>
+                                <label class="label">
+                                  <span class="label-char" style="--index: 0">P</span>
+                                  <span class="label-char" style="--index: 1">a</span>
+                                  <span class="label-char" style="--index: 2">s</span>
+                                  <span class="label-char" style="--index: 3">s</span>
+                                  <span class="label-char" style="--index: 4">w</span>
+                                  <span class="label-char" style="--index: 5">o</span>
+                                  <span class="label-char" style="--index: 6">r</span>
+                                  <span class="label-char" style="--index: 7">d</span>
+                                </label>
+                              </div>
+                              <hr>
+                              <div class="form-group">
+                                <p class="other">Or login with:</p>
+                                <button type="button" class="btn btn-block btn-danger"><i class="fab fa-google"></i> Google</button>
+                                <button type="button" class="btn btn-block btn-primary"><i class="fab fa-facebook"></i> Facebook</button>
+                              </div>
+
+                              <h4 class="switch-modal"><br>Don't have an Account? <a class="sw-md" data-toggle="modal" data-dismiss="modal" data-target="#signupModal">&nbsp;Create an Account</a><br><br></h4>
+
+                            <div class="row justify-content-end m-2">
+                            <button type="submit" class="submit">Log in</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+  
+                <!-- Image -->
+                <div class="col-md-6">
+                    <img src="resources/roadmap_img.png" alt="roadmap-img" class="w-100">
+                </div>
+        </div>
+    </section>
+
+    <h1 class="Title-Label"><br>Web Development Roadmaps</h1>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="card mx-auto">
+                    <div class="card__img"></div>
+                    <div class="card__descr-wrapper">
+                      <p class="card__title">Frontend Developer</p>
+                    <p class="card__descr">
+                        Designs and develops the client-side of web applications using HTML, CSS, and JavaScript.
+                    </p>
+                    <a class="cta" href="frontend_development.html">
+                      <span>More Details</span>
+                      <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                      </svg>
+                    </a>
+
+
+                    </div>
+                  </div>
+              </div>
+
+
+              
+              <div class="col-md-4">
+                <div class="card mx-auto">
+                    <div class="card__img"></div>
+                    <div class="card__descr-wrapper">
+                      <p class="card__title">Backend Developer</p>
+                    <p class="card__descr">
+                        Develops the server-side of web applications using languages and frameworks like Python and Node.js.
+                    </p>
+                    <a class="cta1" href="backend_development.html">
+                      <span>More Details</span>
+                      <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                      </svg>
+                    </a>
+                
+
+
+
+                    </div>
+                  </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+<!--TERMS AND CONDTIONS-->
+          <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document" id="termsmodalid" style="max-width: 700px; border-radius: 10px; background-color: rgba(73, 68, 68, 0.9) !important; backdrop-filter: blur(50px) !important; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Terms and Conditions of Use</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <!-- Pick a Framework form-->
+                <form>
+                  <div class="modal-body" style="height: 400px; overflow-y: auto;">
+                  <h4 class="description1"><br>
+                    
+                    Welcome to our website! If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern our relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.<br>
+                    
+                    <br>The term 'us' or 'we' refers to the owner of the website. The term 'you' refers to the user or viewer of our website.<br>
+                    
+                    <br>1. The content of the pages of this website is for your general information and use only. It is subject to change without notice.
+                    
+                    <br><br>2. This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, personal information may be stored by us for use by third parties.
+                    
+                    <br><br>3. Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.
+                    
+                    <br><br>4. Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.
+                    
+                    <br><br>5. This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.
+                    
+                    <br><br>6. All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.
+                    
+                    <br><br>7. Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offence.
+                    
+                    <br><br>8. From time to time, this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).
+                    
+                    <br><br>9. Your use of this website and any dispute arising out of such use of the website is subject to the laws of [insert your country or state here]. </h4>
+
+                    <div class="row justify-content-end m-2">
+                    <button type="submit" class="submit" data-dismiss="modal">Done</button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+          </div>
+          
+        
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="Fcontainer">
+        <div style="text-align: center; padding-top: 20px;">
+            <a href="landing_page.html" class="FCtxt">Roadmaps</a>
+            <a href="about.html" class="FCtxt">About</a>
+            <a href="#" class="FCtxt">YouTube</a>
+        </div>
+      </div>
+
+      <div class="modal fade" id="out">
+        <div class="modal-dialog modal-lg" style="width: 500px;">
+          <div class="modal-content">
+        
+          <div class="modal-header" style="text-align: center;">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          <div class="modal-body" style="text-align: center;">
+            <h4 style="font-size: 20px;">Signing Out</h4>
+            <p>Are you sure you want to sign out?</p>
+        </div>
+          <div class="modal-footer">
+            <a href="Index.html" style="text-decoration: none;">Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+	  
+    <div class="container1">
+      <div class="card1" style="background-color: black;">
+        <div class="etxt">
+            <img src="resources1/ilearnwebdev.png" style="height: 150px;">
+            <p>Copyright © 2023 iLearnWebdev</p>
+        </div>
+      </div>
+      <div class="card1" style="height: 1px; width: 400px; background-color: black;"></div>
+      
+      <div class="card1" style="background-color: black;">
+        <div style="color: #c5c6c7; text-align: left;">
+            <h6>Contact Us:</h6>
+            <p style="margin-left: 20px; margin-bottom: 0px;"><strong>Email:</strong> iLearnWebDev@gmail.com</p>
+            <p style="margin-left: 20px; margin-top: 0px;"><strong>Telephone:</strong> 143-912-135</p>
+        </div>
+        
+        <div class="Fcontainer">
+          <button class="facebook"></button>
+          <button class="instagram"></button>
+          <button class="twitter"></button>
+          <button class="discord"></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="Fcontainer">
+      <div style="text-align: center; padding-bottom: 10px;">
+		<a href="#" class="FCtxt" style="font-size: 14px; margin-right: 5px;">FAQs</a>
+		<a class="FCtxt" style="font-size: 14px; margin-right: 5px; color: #c5c6c7">|</a>
+		<a href="#" class="FCtxt" style="font-size: 14px; margin-right: 5px;">Terms</a>
+		<a class="FCtxt" style="font-size: 14px; margin-right: 5px; color: #c5c6c7;">|</a>
+		<a href="#" class="FCtxt" style="font-size: 14px; margin-right: 5px;">Privacy</a>
+      </div>
+    </div>
+    </footer>
+
+    
+
+</body>
+
+</html>
